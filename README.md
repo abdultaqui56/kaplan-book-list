@@ -23,6 +23,7 @@ Requirements: Node 22.12+ (Angular 20), npm 10+.
 ```bash
 npm install
 npm start          # runs the API on :3000 and the Angular dev server on :4200
+ng serve -o        # to launch the UI at 4200 PORT
 ```
 
 `npm start` launches both processes concurrently. The Angular dev server proxies `/api/*` to the Node API (`proxy.conf.json`), so the browser only ever talks to one origin.
@@ -123,6 +124,10 @@ server/
 ---
 
 OUTPUT:
-
+Home PAGE:
 <img width="1848" height="1148" alt="image" src="https://github.com/user-attachments/assets/a9617e75-1738-4220-b57e-da8efab57d6d" />
+
+SEARCH BAR:
+<img width="1846" height="1122" alt="image" src="https://github.com/user-attachments/assets/c9f03919-960b-4279-bc85-988bce229d0e" />
+
 
