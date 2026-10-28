@@ -1,0 +1,105 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 8,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "4jeVDwAAQBAJ",
+      "volumeInfo": {
+        "title": "ACT Prep 2019",
+        "subtitle": "5 Practice Tests + Proven Strategies + Online",
+        "authors": ["Kaplan Test Prep"],
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2018-06-05",
+        "infoLink": "https://books.google.com/books?id=4jeVDwAAQBAJ",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=4jeVDwAAQBAJ&printsec=frontcover&img=1&zoom=5",
+          "thumbnail": "http://books.google.com/books/content?id=4jeVDwAAQBAJ&printsec=frontcover&img=1&zoom=1"
+        }
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "H1NtDwAAQBAJ",
+      "volumeInfo": {
+        "title": "MCAT Biochemistry Review 2019-2020",
+        "subtitle": "Online + Book",
+        "authors": ["Kaplan Test Prep"],
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2018-07-03",
+        "infoLink": "https://books.google.com/books?id=H1NtDwAAQBAJ",
+        "imageLinks": {
+          "thumbnail": "http://books.google.com/books/content?id=H1NtDwAAQBAJ&printsec=frontcover&img=1&zoom=1"
+        }
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "yDWVDwAAQBAJ",
+      "volumeInfo": {
+        "title": "GMAT Prep 2018",
+        "subtitle": "2 Practice Tests + Proven Strategies + Online",
+        "authors": ["Kaplan Test Prep"],
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2018-06-05",
+        "infoLink": "https://books.google.com/books?id=yDWVDwAAQBAJ"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "jqdPDwAAQBAJ",
+      "volumeInfo": {
+        "title": "The Official ACT Prep Guide",
+        "authors": ["Kaplan Test Prep"],
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2018-06-05",
+        "infoLink": "https://books.google.com/books?id=jqdPDwAAQBAJ"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "3zeVDwAAQBAJ",
+      "volumeInfo": {
+        "title": "GRE Prep 2019",
+        "subtitle": "Practice Tests + Proven Strategies + Online",
+        "authors": ["Kaplan Test Prep"],
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2018-06-05",
+        "infoLink": "https://books.google.com/books?id=3zeVDwAAQBAJ"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "sMxuDwAAQBAJ",
+      "volumeInfo": {
+        "title": "MCAT Complete 7-Book Subject Review 2019-2020",
+        "authors": ["Kaplan Test Prep"],
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2018-07-03",
+        "infoLink": "https://books.google.com/books?id=sMxuDwAAQBAJ"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "u1x5DwAAQBAJ",
+      "volumeInfo": {
+        "title": "LSAT Prep Plus 2020-2021",
+        "authors": ["Kaplan Test Prep"],
+        "publisher": "Kaplan Publishing",
+        "publishedDate": "2019-11-05",
+        "infoLink": "https://books.google.com/books?id=u1x5DwAAQBAJ"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "QzW3DwAAQBAJ",
+      "volumeInfo": {
+        "title": "NCLEX-RN Prep Plus 2020",
+        "authors": ["Kaplan Nursing"],
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2020-01-07",
+        "infoLink": "https://books.google.com/books?id=QzW3DwAAQBAJ"
+      }
+    }
+  ]
+}

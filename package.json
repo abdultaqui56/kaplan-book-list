@@ -1,0 +1,59 @@
+{
+  "name": "books-list",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "concurrently -n api,web -c blue,green \"npm:start:api\" \"npm:start:web\"",
+    "start:web": "ng serve --open",
+    "start:api": "tsx watch server/index.ts",
+    "build": "npm run build:web && npm run build:api",
+    "build:web": "ng build --configuration production",
+    "build:api": "tsc -p server/tsconfig.json && cp -r server/mock-data server/package.json dist/server/",
+    "serve": "SERVE_STATIC=true node dist/server/index.js",
+    "test": "ng test",
+    "test:web": "ng test",
+    "test:api": "vitest run --config server/vitest.config.ts",
+    "test:all": "npm run test:web && npm run test:api",
+    "lint": "ng lint"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "^20.3.0",
+    "@angular/compiler": "^20.3.0",
+    "@angular/core": "^20.3.0",
+    "@angular/forms": "^20.3.0",
+    "@angular/platform-browser": "^20.3.0",
+    "@angular/router": "^20.3.0",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^20.3.41",
+    "@angular/cli": "^20.3.41",
+    "@angular/compiler-cli": "^20.3.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/supertest": "^7.2.1",
+    "@vitest/coverage-v8": "^3.2.7",
+    "concurrently": "^10.0.6",
+    "jsdom": "^30.1.3",
+    "supertest": "^7.3.1",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.2",
+    "vitest": "^3.2.7"
+  }
+}

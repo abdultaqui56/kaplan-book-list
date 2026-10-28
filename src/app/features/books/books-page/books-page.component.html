@@ -1,0 +1,68 @@
+<div class="page">
+  <header class="page__header">
+    <h1 class="page__title">Books</h1>
+    <button type="button" class="btn btn--primary" (click)="onCreate()">Create New Book</button>
+  </header>
+
+  <app-book-search class="page__search" (termChange)="onSearch($event)" />
+
+  <section class="list" aria-labelledby="all-books-heading">
+    <div class="list__header">
+      <h2 id="all-books-heading" class="list__title">All Books</h2>
+      @if (store.status() === 'loaded') {
+        <p class="list__count" aria-live="polite">
+          @if (store.searchTerm()) {
+            {{ store.filteredCount() }} of {{ store.totalCount() }} books
+          } @else {
+            {{ store.totalCount() }} books
+          }
+        </p>
+      }
+    </div>
+
+    @switch (store.status()) {
+      @case ('loading') {
+        <ul class="grid" aria-busy="true" aria-label="Loading books">
+          @for (i of skeletons; track i) {
+            <li class="skeleton" aria-hidden="true">
+              <span class="skeleton__line skeleton__line--title"></span>
+              <span class="skeleton__line"></span>
+              <span class="skeleton__line"></span>
+              <span class="skeleton__line skeleton__line--short"></span>
+            </li>
+          }
+        </ul>
+      }
+
+      @case ('error') {
+        <div class="state state--error" role="alert">
+          <h3 class="state__title">Books couldn't be loaded</h3>
+          <p class="state__text">{{ store.error()?.message }}</p>
+          @if (store.error()?.retryable) {
+            <button type="button" class="btn btn--secondary" (click)="retry()">Try again</button>
+          }
+        </div>
+      }
+
+      @case ('loaded') {
+        @if (store.filteredBooks().length === 0) {
+          <div class="state">
+            @if (store.searchTerm()) {
+              <h3 class="state__title">No books match “{{ store.searchTerm() }}”</h3>
+              <p class="state__text">Try a different title, author or publisher.</p>
+            } @else {
+              <h3 class="state__title">No books found</h3>
+              <p class="state__text">The books service returned no results for this query.</p>
+            }
+          </div>
+        } @else {
+          <ul class="grid">
+            @for (book of store.filteredBooks(); track book.id) {
+              <li><app-book-card [book]="book" /></li>
+            }
+          </ul>
+        }
+      }
+    }
+  </section>
+</div>

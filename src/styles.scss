@@ -1,0 +1,76 @@
+/* Design tokens — values lifted from the Books-1 / Books-2 mockups. */
+:root {
+  --color-bg: #f6f7f9;
+  --color-surface: #ffffff;
+  --color-border: #e3e6ea;
+  --color-text: #4a5568;
+  --color-text-strong: #1a202c;
+  --color-heading: #2d3e50;
+  --color-muted: #8a94a6;
+  --color-primary: #2a5bd7;
+  --color-primary-hover: #234db8;
+  --color-accent: #f5a623;
+  --color-danger: #c53030;
+  --color-danger-bg: #fff5f5;
+  --color-focus: #2a5bd7;
+
+  --shadow-card: 0 1px 3px rgba(26, 32, 44, 0.08), 0 4px 12px rgba(26, 32, 44, 0.05);
+  --radius-sm: 4px;
+  --radius-md: 6px;
+
+  --sidebar-width: 280px;
+  --sidebar-width-collapsed: 72px;
+  --header-height: 72px;
+
+  --font-sans: 'Nunito', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

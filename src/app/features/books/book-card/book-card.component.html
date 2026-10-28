@@ -1,0 +1,23 @@
+<article class="card">
+  <h3 class="card__title">
+    @if (book().infoLink; as link) {
+      <a [href]="link" target="_blank" rel="noopener noreferrer">{{ book().title }}</a>
+    } @else {
+      {{ book().title }}
+    }
+  </h3>
+  <dl class="card__meta">
+    <div class="card__row">
+      <dt>Authors:</dt>
+      <dd>{{ authorsLabel() }}</dd>
+    </div>
+    <div class="card__row">
+      <dt>Publisher:</dt>
+      <dd>{{ book().publisher ?? 'Unknown' }}</dd>
+    </div>
+    <div class="card__row">
+      <dt>Published Date:</dt>
+      <dd>{{ book().publishedDate ?? 'Unknown' }}</dd>
+    </div>
+  </dl>
+</article>

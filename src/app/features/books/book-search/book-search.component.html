@@ -1,0 +1,20 @@
+<div class="search">
+  <svg class="search__icon" viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="10.5" cy="10.5" r="6.5" />
+    <path d="M15.5 15.5L21 21" />
+  </svg>
+  <label for="book-search" class="visually-hidden">Search books</label>
+  <input
+    id="book-search"
+    class="search__input"
+    type="search"
+    autocomplete="off"
+    [placeholder]="placeholder()"
+    [formControl]="control"
+  />
+  @if (control.value) {
+    <button type="button" class="search__clear" (click)="clear()" aria-label="Clear search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+    </button>
+  }
+</div>

@@ -1,0 +1,13 @@
+services:
+  books:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      # auto  -> call Google Books, fall back to bundled mock data if unreachable
+      # google -> Google Books only (errors surface in the UI)
+      # mock  -> bundled fixture only (fully offline)
+      BOOKS_DATA_SOURCE: ${BOOKS_DATA_SOURCE:-auto}
+      # Optional; raises Google's anonymous quota.
+      GOOGLE_BOOKS_API_KEY: ${GOOGLE_BOOKS_API_KEY:-}
+    restart: unless-stopped
