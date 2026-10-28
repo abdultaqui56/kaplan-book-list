@@ -128,6 +128,11 @@ Home PAGE:
 <img width="1848" height="1148" alt="image" src="https://github.com/user-attachments/assets/a9617e75-1738-4220-b57e-da8efab57d6d" />
 
 SEARCH BAR:
-<img width="1846" height="1122" alt="image" src="https://github.com/user-attachments/assets/c9f03919-960b-4279-bc85-988bce229d0e" />
+<img width="1832" height="1102" alt="image" src="https://github.com/user-attachments/assets/f0a75ce1-a832-48a7-bef4-ba6b5e5a5af4" />
+
+Test Cases Passed:
+<img width="888" height="109" alt="image" src="https://github.com/user-attachments/assets/a8b07a02-a891-41e1-93f4-2c65ad8a5400" />
+
+
 
 
