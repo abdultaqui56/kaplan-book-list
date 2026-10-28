@@ -1,3 +1,4 @@
+# kaplan-book-list
 # Books list
 
 An Angular 20 + Node.js app that lists Kaplan Test Prep books from the Google Books API, following the `Books-1.png` / `Books-2.png` mockups (collapsible sidebar, searchable two-column card grid).
