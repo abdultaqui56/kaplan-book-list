@@ -121,3 +121,8 @@ server/
 **Fidelity to the mockup.** Layout, palette, type scale and the orange card accent follow the screenshots. Two deliberate deviations: the label is "Publisher" (capitalised to match its siblings; the mockup shows lowercase), and titles link to Google Books when a link exists. The "Create New Book" button is wired but out of scope for this exercise.
 
 ---
+
+OUTPUT:
+
+<img width="1848" height="1148" alt="image" src="https://github.com/user-attachments/assets/a9617e75-1738-4220-b57e-da8efab57d6d" />
+
