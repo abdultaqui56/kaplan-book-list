@@ -121,10 +121,3 @@ server/
 **Fidelity to the mockup.** Layout, palette, type scale and the orange card accent follow the screenshots. Two deliberate deviations: the label is "Publisher" (capitalised to match its siblings; the mockup shows lowercase), and titles link to Google Books when a link exists. The "Create New Book" button is wired but out of scope for this exercise.
 
 ---
-
-## Possible next steps
-
-- Virtual scrolling / pagination UI if the result set grew significantly.
-- Server-side search once the data is no longer loaded in one go.
-- Route-level code splitting if more pages were added.
-- ESLint in CI (Prettier config is already in `package.json`).
